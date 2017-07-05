@@ -20,7 +20,7 @@ public class Juxing extends View {
     private static final int WIDTH =100 ;
     private Rect mRect =new Rect(0,0,WIDTH,WIDTH);
     private  Paint paint=new Paint();
-
+    //http://blog.csdn.net/lsyz0021/article/details/51292311
     private int dataX,dataY;
 
     public Juxing(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -46,10 +46,14 @@ public class Juxing extends View {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
+
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         int  x = (int) event.getX();
         int  y = (int) event.getY();
+
+
 
         switch (event.getAction()){
 
